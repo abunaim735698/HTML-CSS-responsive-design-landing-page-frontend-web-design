@@ -1,0 +1,99 @@
+/* Responsive styles for B14-Assignment-1 */
+
+/* Extra Small (Mobile) */
+@media (max-width: 640px) {
+    nav {
+        flex-direction: column;
+        margin: 10px;
+        gap: 15px;
+    }
+
+    .nav-m {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-overlay {
+        padding: 60px 20px;
+    }
+
+    .hero-text- {
+        font-size: 32px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+
+    .speakers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-cards {
+        flex-direction: column;
+    }
+
+    .price-card {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 60px 20px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+/* Small (Tablets) */
+@media (min-width: 641px) and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-overlay {
+        padding: 100px 40px;
+    }
+
+    .hero-text- {
+        font-size: 40px;
+    }
+
+    .speakers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricing-cards {
+        flex-direction: column;
+    }
+
+    .price-card {
+        width: 80%;
+    }
+}
+
+/* Medium to Large (Desktops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero-overlay {
+        padding: 120px 60px;
+    }
+    
+    .speakers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricing-cards {
+        flex-wrap: wrap;
+    }
+}
+
+/* Extra Large (Large Desktops) */
+@media (min-width: 1025px) {
+    .speakers-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
